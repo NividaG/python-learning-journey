@@ -1,0 +1,10 @@
+import requests
+
+headers = {
+    "Accept": "application/json"
+}
+
+response = requests.get("https://api.github.com")
+
+print(response.status_code)
+print(response.json())
